@@ -6,6 +6,7 @@ RUN apk add --no-cache git sudo
 
 COPY . /hosts
 
+
 RUN pip install --no-cache-dir --upgrade -r /hosts/requirements.txt
 
 ENV PATH $PATH:/hosts
